@@ -1,0 +1,85 @@
+.carousel {
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+  .pictures {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    .background {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+      filter: blur(2rem);
+    }
+
+    .polaroid {
+      background: #fff;
+      height: 100%;
+      padding: 16px;
+      gap: 4px;
+      position: absolute;
+      width: 100%;
+
+      .photo {
+        border-radius: 4px;
+        object-fit: contain;
+        max-height: 70%;
+        width: 100%;
+      }
+
+      .title {
+        align-items: center;
+        color: #000;
+        display: flex;
+        font-size: 2rem;
+        height: 30%;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .carousel {
+    .pictures {
+      .polaroid {
+        background: #fff;
+        border: 1px solid #ccc;
+        box-shadow: rgba(0, 0, 0, 0.067) 0px 1px 6px;
+        border-radius: 4px;
+        height: 450px;
+        position: absolute;
+        width: 300px;
+
+        .photo {
+          max-height: 86%;
+        }
+
+        .title {
+          height: 14%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel {
+    .pictures {
+      .polaroid {
+        height: 80%;
+        position: absolute;
+        width: auto;
+      }
+    }
+  }
+}
