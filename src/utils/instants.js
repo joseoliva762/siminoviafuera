@@ -36,7 +36,15 @@ export const instants = [
     image: '/unacomida.jpeg'
   },
   {
+    title: 'Un snack',
+    image: '/unsnak.jpeg'
+  },
+  {
+    title: 'Una pelicula',
+    image: '/unapelicula.jpeg'
+  },
+  {
     title: 'Te amo ma bebe..',
     image: '/teamo.jpeg'
-  },
+  }
 ]

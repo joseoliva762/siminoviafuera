@@ -34,7 +34,7 @@ const useCarouselProvider = () => {
   }
 
   const resetInstants = () => {
-    setInstant(instants?.[0]);
+    setInstant({ ...instants?.[0], index: 0 });
   }
 
   useEffect(() => {
